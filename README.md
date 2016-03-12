@@ -1,6 +1,6 @@
 # Ligne
 
-A simple style theme for [Ghost](http://github.com/tryghost/ghost/).
+A simple theme for [Ghost](http://github.com/tryghost/ghost/).
 
 Design by [个篱](https://www.zhihu.com/people/geli)
 
