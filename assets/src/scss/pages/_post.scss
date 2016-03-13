@@ -1,0 +1,15 @@
+.post {
+  padding: 20px 40px;
+  border-bottom: 1px solid $border-color-base;
+  h2 {
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 1.5em;
+    a {
+      color: $text-color-black;
+    }
+  }
+  .post-meta {
+    color: $text-color-light;
+  }
+}

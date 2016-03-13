@@ -14,9 +14,9 @@ var gulp = require('gulp'),
  * Watch changing
  */
 gulp.task('watch', function() {
-  gulp.watch('src/scss/*.scss', ['css']);
-  gulp.watch('src/js/*.js', ['js']);
-  gulp.watch('src/images/**', ['images']);
+  gulp.watch('assets/src/scss/**/*.scss', ['publish-css']);
+  gulp.watch('assets/src/js/*.js', ['publish-js']);
+  gulp.watch('assets/src/images/**', ['publish-img']);
 });
 
 /**
@@ -30,14 +30,14 @@ gulp.task('build', ['clean'], function() {
  * Clean task
  */
 gulp.task('clean', function(cb) {
-    del('dist/', cb)
+    return del(['assets/dist/**/*'], cb);
 });
 
 /**
  * Build CSS
  */
 gulp.task('publish-css', function () {
-  return gulp.src('assets/src/scss/*.scss')
+  return gulp.src('assets/src/scss/application.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 3 versions'],

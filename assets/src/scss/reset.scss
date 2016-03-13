@@ -1,0 +1,42 @@
+ul,
+ol,
+dl,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+dt {
+  font-weight: 400;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+  @include prevent-flicker();
+}
+
+label {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover, &:focus,&:active {
+    color: $link-color-hover !important;
+    outline: none;
+  }
+}
+
+input {
+  -webkit-font-smoothing: antialiased;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}

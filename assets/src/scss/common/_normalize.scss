@@ -33,7 +33,7 @@ html {
  * Remove default margin.
  */
 
-body {
+* {
   margin: 0;
 }
 
@@ -142,12 +142,6 @@ strong {
   font-weight: bold;
 }
 
-@if $legacy_browser_support {
-  blockquote {
-    margin: 1em 40px;
-  }
-}
-
 /**
  * Address styling not present in Safari and Chrome.
  */
@@ -163,36 +157,33 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
 }
 
 @if $legacy_browser_support {
   h2 {
     font-size: 1.5em;
-    margin: 0.83em 0;
   }
 
   h3 {
     font-size: 1.17em;
-    margin: 1em 0;
   }
 
   h4 {
     font-size: 1em;
-    margin: 1.33em 0;
   }
 
   h5 {
     font-size: 0.83em;
-    margin: 1.67em 0;
   }
 
   h6 {
     font-size: 0.67em;
-    margin: 2.33em 0;
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
 /**
  * Addresses styling not present in IE 8/9.
  */
@@ -203,15 +194,6 @@ mark {
 }
 
 @if $legacy_browser_support {
-
-  /**
-   * Addresses margins set differently in IE 6/7.
-   */
-
-  p,
-  pre {
-    *margin: 1em 0;
-  }
 
   /*
    * Addresses CSS quotes not supported in IE 6/7.
@@ -267,28 +249,13 @@ sub {
      ========================================================================== */
 
   /*
-   * Addresses margins set differently in IE 6/7.
-   */
-
-  dl,
-  menu,
-  ol,
-  ul {
-    *margin: 1em 0;
-  }
-
-  dd {
-    *margin: 0 0 0 40px;
-  }
-
-  /*
    * Addresses paddings set differently in IE 6/7.
    */
 
   menu,
   ol,
   ul {
-    *padding: 0 0 0 40px;
+    *padding: 0;
   }
 
   /*
@@ -328,14 +295,6 @@ svg:not(:root) {
 
 /* Grouping content
    ========================================================================== */
-
-/**
- * Address margin not present in IE 8/9 and Safari.
- */
-
-figure {
-  margin: 1em 40px;
-}
 
 /**
  * Address differences between Firefox and other browsers.
@@ -393,7 +352,6 @@ select,
 textarea {
   color: inherit; /* 1 */
   font: inherit; /* 2 */
-  margin: 0; /* 3 */
   @if $legacy_browser_support {
     vertical-align: baseline; /* 3 */
     *vertical-align: middle; /* 3 */

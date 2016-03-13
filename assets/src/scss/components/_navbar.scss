@@ -1,0 +1,11 @@
+.main-nav {
+  padding: 20px 0 20px 40px;
+  border-bottom: 1px solid $border-color-base;
+  li {
+    margin: 0;
+    padding: 9px 0;
+    font-size: 18px;
+    line-height: 1;
+    color: $nav-color-base;
+  }
+}

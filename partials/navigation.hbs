@@ -1,8 +1,12 @@
-<div class="nav left">
-  <h1 class="logo"><a href=""><span></span></a></h1>
-  <ul>
+<div class="nav">
+  <h1 class="logo"><a href="{{@blog.url}}" style="background: url({{@blog.logo}}) 0 0 / 100% auto no-repeat;"><span>LIGNE</span></a></h1>
+  <ul class="main-nav">
     {{#foreach navigation}}
       <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
     {{/foreach}}
   </ul>
+  <div class="info">
+    <a href="/about" class="info-about">关于</a>
+    <a href="{{@blog.url}}" title="知识共享署名-非商业性使用-禁止演绎 2.5 中国大陆许可协议" class="info-right">Copyright © 2016</a>
+  </div>
 </div>

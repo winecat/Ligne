@@ -1,0 +1,21 @@
+body {
+  @include font-family();
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color-base;
+}
+
+.left {
+  width: 210px;
+  float: left;
+  padding-left: 40px;
+}
+
+.right {
+  width: 680px;
+  float: left;
+  border-left: 1px solid $border-color-base;
+  margin-bottom: 100px;
+  min-height: 600px;
+}
+

@@ -1,0 +1,14 @@
+.pagination {
+  padding: 60px 0 100px 0;
+  text-align: center;
+  font-size: 20px;
+  font-family: Georgia;
+  color: $text-color-gray;
+  .prev {
+    padding: 15px 30px 15px 0;
+  }
+  .next {
+    padding: 15px 0 15px 30px;
+    border-left: 1px solid #ccc;
+  }
+}

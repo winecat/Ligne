@@ -1,0 +1,15 @@
+.logo {
+  border-bottom: 1px solid $border-color-base;
+  a {
+    display: block;
+    width: 210px;
+    height: 100px;
+    &:hover {
+      background-position-x: 0 !important;
+      background-position-y: bottom !important;
+    }
+    span {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.main-header h1 {
+  font-size: 25px;
+  height: 100px;
+  line-height: 100px;
+  border-bottom: 1px solid $border-color-base;
+  padding-left: 40px;
+  a {
+    color: $text-color-base;
+  }
+}

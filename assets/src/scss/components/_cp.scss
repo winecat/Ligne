@@ -1,0 +1,14 @@
+.info {
+  border-bottom: 1px solid $border-color-base;
+  font-size: 0;
+  a {
+    display: inline-block;
+    padding: 20px 17px;
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    & + a {
+      border-left: 1px solid $border-color-base;
+    }
+  }
+}

@@ -1,3 +1,25 @@
+// ------------------------------
+// THE BASICS
+// ------------------------------
 @import "common/_variables.scss";
-
 @import "common/_normalize.scss";
+@import "reset.scss";
+
+// ------------------------------
+// GLOBAL STYLES
+// ------------------------------
+@import 'global.scss';
+
+// ------------------------------
+// COMPONENTS
+// ------------------------------
+@import 'components/_header.scss';
+@import 'components/_logo.scss';
+@import 'components/_navbar.scss';
+@import 'components/_cp.scss';
+@import 'components/_pagination.scss';
+
+// ------------------------------
+// PAGES
+// ------------------------------
+@import 'pages/_post.scss';
