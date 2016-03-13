@@ -7,7 +7,7 @@
  * Set to false if you want to drop support for IE6 and IE7
  */
 
-$legacy_browser_support: false !default;
+$legacy_browser_support: true !default;
 
 /* Base
    ========================================================================== */
@@ -156,20 +156,20 @@ dfn {
  */
 
 h1 {
-  font-size: 2em;
+  font-size: 1.38em;
 }
 
 @if $legacy_browser_support {
   h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   h3 {
-    font-size: 1.17em;
+    font-size: 1.2em;
   }
 
   h4 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   h5 {

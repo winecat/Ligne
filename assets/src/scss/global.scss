@@ -1,3 +1,7 @@
+html {
+  @include selection();
+}
+
 body {
   @include font-family();
   font-size: $font-size-base;
@@ -19,3 +23,29 @@ body {
   min-height: 600px;
 }
 
+blockquote {
+  border-left: 2px solid $border-color-base;
+  padding-left: 15px;
+  color: $text-color-gray;
+  font-style: italic;
+  font-size: 0.875rem;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+  border-left: 2px solid $border-color-base;
+  background: $box-bg-color;
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+    tab-size: 4;
+  }
+}
+
+code {
+  background: $box-bg-color;
+  padding: 1px 5px;
+  font-family: "Courier New", Consolas, monopace, FangSong, STFangsong;
+}

@@ -1,0 +1,43 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<header class="main-header">
+  <h1>
+    <a href="{{@blog.url}}">{{@blog.title}}</a>
+  </h1>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+            <section class="post-meta">
+                {{tags separator=" · " suffix=" · "}}<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY-MM-DD"}}</time>
+            </section>
+        </header>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+
+    </article>
+</main>
+
+<aside class="read-next pagination">
+    {{#next_post}}
+    <a class="read-next-story prev" href="{{url}}">« {{title}}
+    </a>
+    {{/next_post}}
+    {{#prev_post}}
+    <a class="read-next-story next" href="{{url}}">{{title}} »
+    </a>
+    {{/prev_post}}
+</aside>
+
+{{/post}}

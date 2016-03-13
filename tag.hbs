@@ -1,0 +1,18 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! If we have a tag cover, display that - else blog cover - else nothing }}
+
+<header class="main-header">
+  <h1>
+    <a href="{{@blog.url}}">{{@blog.title}}</a> · {{tag.name}}
+  </h1>
+</header>
+
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+
+</main>

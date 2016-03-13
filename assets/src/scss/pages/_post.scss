@@ -1,7 +1,7 @@
 .post {
   padding: 20px 40px;
   border-bottom: 1px solid $border-color-base;
-  h2 {
+  .post-title {
     padding: 15px 0;
     font-size: 18px;
     line-height: 1.5em;
@@ -11,5 +11,38 @@
   }
   .post-meta {
     color: $text-color-light;
+  }
+  .post-excerpt, .post-content {
+    p {
+      margin: 15px 0;
+      padding: 0;
+      text-align: justify;
+    }
+    h2 {
+      margin-top: 1.5em;
+    }
+    h3 {
+      margin-top: 1.3em;
+    }
+    h4, h5 {
+      margin-top: 1.1em;
+    }
+    hr {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAUCAYAAAEMx6gDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAxhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDdFMkFDMDBFMDIwMTFFNTkyMjBEOTY1MDlEN0Y5M0MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEVBMDkzQTRERjZEMTFFNTkyMjBEOTY1MDlEN0Y5M0MiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhFQTA5M0EwREY2RDExRTU5MjIwRDk2NTA5RDdGOTNDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhFQTA5M0ExREY2RDExRTU5MjIwRDk2NTA5RDdGOTNDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+W9++7gAAAOBJREFUeNpi/P//PwOpgImBDECWJoAAYiTVeUw0dxZAADGSE2JUcVV6ejoYkyoHlf+MLgYQQAPnk+FjCTBc/+MJc3xyPwcsdQEEEF0sGTbxTg/AQqxC5Dw+c+ZMBlrrQ9ZLjL5hEyPDJo8ABNBoZh/1yKhHRusR8st0auqjRT0Cakh9JiOwyNUHAv+pHiNAwE6mY9gpSDGMo/XIUAUAATZsYmQ0QkbBaISMRsgoGI2Q0QihcoRAW96tQJwHxJOAuJrU1vtgto/WdtKyuchI78Q1EAl6tMgaLbJGwWiEjGAAANGpaYZ5u8gyAAAAAElFTkSuQmCC) no-repeat center;
+      height: 50px;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      padding: 2px;
+      border-bottom: 1px solid #999;
+    }
+    ul,
+    ol,
+    dl {
+      margin-left: 2em;
+      padding: 0;
+    }
   }
 }
