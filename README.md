@@ -4,6 +4,8 @@ A simple theme for [Ghost](http://github.com/tryghost/ghost/).
 
 Design by [个篱](https://www.zhihu.com/people/geli)
 
+![cove](cover.png)
+
 ## Recommend
 
 Recommend the use of 210px * 100px pictures as logo, if the logo need to show hover effect, image size should be 210px * 220px.
