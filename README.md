@@ -35,8 +35,6 @@ gulp build
 
 ## TODO
 
-- about page
-- author page
 - responsive style
 
 ## The MIT License

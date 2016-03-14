@@ -23,6 +23,10 @@ body {
   min-height: 600px;
 }
 
+.hidden {
+  display: none!important;
+}
+
 blockquote {
   border-left: 2px solid $border-color-base;
   padding-left: 15px;
