@@ -4,7 +4,15 @@ A simple theme for [Ghost](http://github.com/tryghost/ghost/). Support mobile br
 
 Design by [个篱](https://www.zhihu.com/people/geli)
 
+**DEMO** [http://yunun.uno/](http://yunun.uno/)
+
+PC browsers
+
 ![cove](cover.png)
+
+mobild browsers
+
+![cove](phone.png)
 
 ## Recommend
 
