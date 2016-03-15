@@ -51,7 +51,7 @@ gulp.task('publish-css', function () {
  * Build JS
  */
 gulp.task('publish-js', function () {
-  return gulp.src('assets/src/js/*.js')
+  return gulp.src(['assets/src/js/fastclick.js', 'assets/src/js/application.js'])
     .pipe(concat('application.js'))
     .pipe(uglify())
     .pipe(gulp.dest('assets/dist/js'));

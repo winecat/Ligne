@@ -11,14 +11,7 @@ body {
 }
 
 #wrap {
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
+  @extend .clearfix;
 }
 
 .left {

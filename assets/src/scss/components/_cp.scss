@@ -1,13 +1,17 @@
 .info {
   border-bottom: 1px solid $border-color-base;
-  font-size: 0;
+  @extend .clearfix;
   a {
-    display: inline-block;
-    padding: 20px 17px;
+    float: left;
+    padding: 20px 0;
     text-align: center;
-    color: #666666;
+    color: $text-color-gray;
     font-size: 14px;
-    & + a {
+    &.info-about {
+      width: 62px;
+    }
+    &.info-right {
+      width: 146px;
       border-left: 1px solid $border-color-base;
     }
   }
