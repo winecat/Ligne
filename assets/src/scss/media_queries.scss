@@ -98,11 +98,19 @@
     @include border-bottom-1px();
   }
 
-  .pagination a+a,
-  .read-next a.prev+.next {
+  .pagination a+a {
     border: none;
     position: relative;
     @include border-left-1px();
+  }
+
+  .read-next {
+    .prev {
+      display: none;
+    }
+    .next {
+      border: none;
+    }
   }
 }
 
