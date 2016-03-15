@@ -46,3 +46,47 @@
     }
   }
 }
+
+.read-next {
+  padding: 60px 20px 100px;
+  font-family: Georgia;
+  color: $text-color-gray;
+  font-size: 0;
+  display: table;
+  margin: 0 auto;
+  a {
+    font-size: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    padding: 15px 30px;
+    &.prev {
+      text-align: right;
+      &:before {
+        content: '« ';
+        height: 36px;
+        line-height: 36px;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        margin: -18px;
+      }
+    }
+    &.next {
+      text-align: left;
+      &:after {
+        content: ' »';
+        height: 36px;
+        line-height: 36px;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        margin: -18px;
+      }
+    }
+    &.prev + .next {
+      border-left: 1px solid $border-color-base;
+    }
+  }
+}

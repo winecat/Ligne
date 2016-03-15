@@ -1,0 +1,109 @@
+// ------------------------------
+// MEDIA QUERIES
+// ------------------------------
+
+@media all and (min-width: $size-lg) {
+
+}
+
+// ------------------------------
+// < lagre size
+// ------------------------------
+
+@media all and (max-width: $size-lg) {
+
+#navbar {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  background: #111;
+  margin-top: -180px;
+  transition: margin-top .35s ease;
+
+  .logo {
+    display: none;
+  }
+  .main-nav {
+    padding: 0;
+    width: 100%;
+    border: none;
+    li {
+      margin: 0 15px;
+      font-size: 14px;
+    }
+  }
+  a:hover, a:focus {
+    color: inherit!important;
+  }
+  .info {
+    color: #6b6767;
+    a {
+      display: block;
+      line-height: 1;
+      padding: 9px 0;
+      margin: 0 15px;
+      border: 0;
+    }
+  }
+  &.draw {
+    margin-top: 0px;
+  }
+}
+
+#main-content {
+  width: 100%;
+  border: none;
+  position: relative;
+
+  .main-header {
+    text-align: center;
+    h1 {
+      padding: 0 20px;
+    }
+  }
+
+  .drawer-toggle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #ddd;
+    color: #777;
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      top: -1px;
+      border: solid transparent;
+      border-width: 10px;
+      border-top-color: #aaa;
+      position: absolute;
+      top: 10px;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+  }
+
+  .post,
+  .post-content a,
+  .post .post-excerpt a,
+  .main-header h1 {
+    border: none;
+    position: relative;
+    @include border-bottom-1px();
+  }
+
+  .pagination a+a,
+  .read-next a.prev+.next {
+    border: none;
+    position: relative;
+    @include border-left-1px();
+  }
+}
+
+}

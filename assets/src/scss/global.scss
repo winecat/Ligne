@@ -7,6 +7,18 @@ body {
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $text-color-base;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#wrap {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
 }
 
 .left {
@@ -18,13 +30,17 @@ body {
 .right {
   width: 680px;
   float: left;
-  border-left: 1px solid $border-color-base;
   margin-bottom: 100px;
   min-height: 600px;
+  border-left: 1px solid $border-color-base;
 }
 
 .hidden {
   display: none!important;
+}
+
+.drawer-toggle {
+  display: none;
 }
 
 h1 {
@@ -44,6 +60,7 @@ pre {
   overflow-x: auto;
   border-left: 2px solid $border-color-base;
   background: $box-bg-color;
+  font-family: "Courier New", Consolas, monopace, FangSong, STFangsong;
   > code {
     border: 0;
     padding-right: 0;
@@ -55,5 +72,4 @@ pre {
 code {
   background: $box-bg-color;
   padding: 1px 5px;
-  font-family: "Courier New", Consolas, monopace, FangSong, STFangsong;
 }

@@ -29,14 +29,17 @@
     </article>
 </main>
 
-<aside class="read-next pagination">
+<aside class="read-next">
     {{#next_post}}
-    <a class="read-next-story prev" href="{{url}}">« {{title}}
-    </a>
+        <a class="read-next-story prev" href="{{url}}">
+            {{title}}
+        </a>
     {{/next_post}}
+
     {{#prev_post}}
-    <a class="read-next-story next" href="{{url}}">{{title}} »
-    </a>
+        <a class="read-next-story next" href="{{url}}">
+            {{title}}
+        </a>
     {{/prev_post}}
 </aside>
 

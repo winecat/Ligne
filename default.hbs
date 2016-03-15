@@ -21,18 +21,25 @@
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
-    <div class="wrap">
-        <div class="left">
+    <div id="wrap">
+        <div id="navbar" class="left">
           {{navigation}}
         </div>
-        <div class="right">
+        <div id="main-content" class="right">
             {{! Everything else gets inserted here }}
             {{{body}}}
+            <a href="javascript:;" class="drawer-toggle"></a>
         </div>
     </div>
 
-    <!--<script type="text/javascript" src="{{asset "dist/js/application.js"}}"></script>
-    -->
+    <script>
+      ;(function () {
+        document.querySelector('.drawer-toggle').addEventListener('click', function (e) {
+          document.querySelector('#navbar').classList.toggle('draw');
+        }, false);
+      })()
+    </script>
+
     {{ghost_foot}}
 </body>
 </html>

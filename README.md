@@ -1,6 +1,6 @@
 # Ligne
 
-A simple theme for [Ghost](http://github.com/tryghost/ghost/).
+A simple theme for [Ghost](http://github.com/tryghost/ghost/). Support mobile browsers.
 
 Design by [个篱](https://www.zhihu.com/people/geli)
 
@@ -34,9 +34,5 @@ Build assets:
 ```
 gulp build
 ```
-
-## TODO
-
-- responsive style
 
 ## The MIT License
