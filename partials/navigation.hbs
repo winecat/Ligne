@@ -1,5 +1,5 @@
 <nav class="nav">
-  <h1 class="logo"><a href="{{@blog.url}}" style="background: url({{@blog.logo}}) 0 0 / 100% auto no-repeat;"><span>LIGNE</span></a></h1>
+  <div class="logo"><a href="{{@blog.url}}" style="background: url({{@blog.logo}}) 0 0 / 100% auto no-repeat;"><span>{{@blog.title}}</span></a></div>
   <ul class="main-nav">
     {{#foreach navigation}}
       {{#unless @last}}
