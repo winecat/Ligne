@@ -16,6 +16,7 @@
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "dist/css/application.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -33,7 +34,15 @@
     </div>
 
     <script src="{{asset "dist/js/application.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
 
     {{ghost_foot}}
+{{!-- 为 Ghost 添加 Fluidbox Lightbox 图片查看插件达到 Medium 的效果 --}}
+<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/fluidbox/1.4.3.1/css/fluidbox.css" />
+<script type="text/javascript" src="https://cdn.bootcss.com/fluidbox/1.4.3.1/jquery.fluidbox.js"></script>
+<script>
+    $('a').fluidbox({
+    });
+</script>
 </body>
 </html>
