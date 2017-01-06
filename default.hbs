@@ -32,6 +32,10 @@
             <a href="javascript:;" class="drawer-toggle"></a>
         </div>
     </div>
+    <div class="back-to-top js-back-to-top-btn hidden">
+        <i class="fa fa-lg fa-fw fa-arrow-up"></i>
+        {{!-- 这里的图标定义成用的fa样式，也可以改成自定义的图片 --}}
+    </div>
     {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css" />
@@ -45,6 +49,25 @@
 <script>
     $('a').fluidbox({
     });
+</script>
+<script
+goToTop = function() {
+    var backToTopButton = $('.js-back-to-top-btn');
+    if($(backToTopButton).length) {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $(backToTopButton).removeClass('hidden');
+            } else {
+                $(backToTopButton).addClass('hidden');
+            }
+        });
+        $(backToTopButton).on('click', function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+        });
+    }
+}
 </script>
 </body>
 </html>
