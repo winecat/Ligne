@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <a href="#" class="cd-top">Top</a>
     {{! Document Settings }}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,7 +12,7 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-     <link rel="shortcut icon" href="{{asset "/images/favicon.ico"}}">
+     <link rel="shortcut icon" href="{{asset "images/favicon.ico"}}">
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "dist/css/application.css"}}" />
@@ -45,25 +44,6 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.4/js/jquery.fluidbox.min.js"></script>
 <script>
     $('a').fluidbox({
-    });
-</script>
-<script>
-    var offset = 300;
-    var offset_opacity = 1200;
-    var scroll_top_duration = 700;
-    var $back_to_top = $('.cd-top');
-    $(window).scroll(function() { ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-        if ($(this).scrollTop() > offset_opacity) {
-            $back_to_top.addClass('cd-fade-out');
-        }
-    });
-    $back_to_top.on('click',
-    function(event) {
-        event.preventDefault();
-        $('body,html').animate({
-            scrollTop: 0
-        },
-        scroll_top_duration);
     });
 </script>
 </body>
